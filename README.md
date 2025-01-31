@@ -20,6 +20,7 @@ func GetSubDomains() []string {
 		APIURL:       "https://[your mailinabox box]/admin/dns/custom",
 		EmailAddress: "[create a special account on your box for managing domains]",
 		Password:     "[password of the special dns account]",
+		TOTPSecret:   "[TOTP secret for multifactor authentication]", 
 	}
 	records, err := provider.GetRecords(context.TODO(), zone)
 	if err != nil {
