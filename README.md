@@ -17,7 +17,7 @@ import (
 func GetSubDomains() []string {
 	zone := "[your mailinabox root domain]." // <- note the trailing .
 	provider := &mailinabox.Provider{
-		APIURL:       "https://[your mailinabox box]/admin/dns/custom",
+		APIURL:       "https://[your mailinabox box]/admin",
 		EmailAddress: "[create a special account on your box for managing domains]",
 		Password:     "[password of the special dns account]",
 		TOTPSecret:   "[TOTP secret for multifactor authentication]", 
